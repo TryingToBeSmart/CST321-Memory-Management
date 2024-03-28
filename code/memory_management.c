@@ -79,9 +79,12 @@ int main()
     // int physical_address = virtual_hex_address % (PHYSICAL_MEMORY_SIZE + 1);
     // if (physical_address <= PHYSICAL_MEMORY_SIZE) 
     
+    // If the virtual address is less than the physical memory size, they will have 
+    // the same address based on this example.  Else if the virtual address is higher
+    // than the physical address, print "Currently on disk"
     if (virtual_hex_address <= PHYSICAL_MEMORY_SIZE) 
     {
-        printf("Physical memory address: 0x%X\n", physical_address);
+        printf("Physical memory address: 0x%X\n", virtual_hex_address);
     }
     else
     {
