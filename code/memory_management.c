@@ -73,12 +73,7 @@ int main()
     int virtual_hex_address;
     scanf("%x", &virtual_hex_address);
     printf("\nVirtual memory address: 0x%X\n", virtual_hex_address);
-    
-    // Calculate physical memory address based on the page size
-    // If the address doesn't 
-    // int physical_address = virtual_hex_address % (PHYSICAL_MEMORY_SIZE + 1);
-    // if (physical_address <= PHYSICAL_MEMORY_SIZE) 
-    
+       
     // If the virtual address is less than the physical memory size, they will have 
     // the same address based on this example.  Else if the virtual address is higher
     // than the physical address, print "Currently on disk"
