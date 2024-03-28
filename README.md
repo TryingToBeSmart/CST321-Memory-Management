@@ -11,4 +11,10 @@ The program simulates a simple memory management system, where a page table is u
 
 3. Address Translation: When a virtual address is provided, the MMU consults the page table to find the corresponding physical frame number. It then calculates the physical memory address based on the page size and the physical frame number.
 
+### Separation of Policy and Mechanism
+The program separates the policy (page size selection) from the mechanism (address translation). Users can specify the page size (either 4095 or 8191 bytes) to observe how it affects the page table entries and address translation. This separation allows for greater flexibility and adaptability in the memory management system.
+
+### Page Fault Handling
+Another important aspect of memory management that is not specifically implemented in this program is fault handling. Page faults occur when a virtual page is not currently mapped to a physical frame in memory.
+
 [![Video](./screenshot/video.png)](https://www.loom.com/share/1ee107a6e6014ba899c9290f6d7d32a1?sid=b9be8c86-0c33-492c-9988-5ee0a4b629c9)
